@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#101010"
+    android:padding="10dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/single_budget_color"
+            android:layout_marginTop="2dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@color/orange"/>
+        <TextView
+            android:id="@+id/single_budget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Budget Name:"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/single_budget_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget Amount"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/single_budget_spent"
+        >
+
+        <ProgressBar
+            android:id="@+id/single_budget_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressBackgroundTint="@color/white"
+            android:progress="60"
+            android:scaleY="5"/>
+
+        <View
+            android:id="@+id/single_budget_day"
+            android:layout_width="4dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="180dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/single_budget_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Budget price"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

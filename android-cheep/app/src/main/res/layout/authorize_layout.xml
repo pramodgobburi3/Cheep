@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#202020">
+
+    <TextView
+        android:id="@+id/pin_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pin: "
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pin_txt"
+        android:cursorVisible="true"
+        android:layout_marginTop="10dp"
+        android:hint="****"
+        android:textColorHint="@color/white"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/green"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="4"
+        app:itemHeight="48dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="0dp"
+        app:itemWidth="48dp"
+        app:lineColor="@color/white"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Or Use fingerprint instead"
+        android:textColor="@color/white"
+        android:layout_below="@id/pin"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"/>
+
+</RelativeLayout>

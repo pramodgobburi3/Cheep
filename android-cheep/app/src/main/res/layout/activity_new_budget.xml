@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewBudgetActivity">
+
+    <TextView
+        android:id="@+id/label_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget Name:"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/new_budget_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/label_name"
+        />
+
+    <TextView
+        android:id="@+id/label_amount"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget Amount:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/new_budget_name"/>
+    <EditText
+        android:id="@+id/new_budget_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/label_amount"
+        android:inputType="numberDecimal"
+        />
+
+    <LinearLayout
+        android:id="@+id/new_budget_color_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/new_budget_amount">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget Color:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:id="@+id/new_budget_color"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/blue"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="right"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/new_budget_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:background="@color/orange"
+        android:layout_below="@id/new_budget_color_view"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
